@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    " a ",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft_add:world_heart"
+    },
+    "b": {
+      "item": "minecraft:bedrock"
+    }
+  },
+  "result": {
+    "id": "minecraft_add:world_heart_tools",
+    "count": 1
+  }
+}

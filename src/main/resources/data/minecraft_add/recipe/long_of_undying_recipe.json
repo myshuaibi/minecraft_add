@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:netherite_upgrade_smithing_template"
+    },
+    "b": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "c": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "id": "minecraft_add:long_of_undying",
+    "count": 1
+  }
+}

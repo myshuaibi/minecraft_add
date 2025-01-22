@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft_add:error_armor_leggings",
+    "minecraft_add:copper_armor_leggings",
+    "minecraft_add:bedrock_armor_leggings",
+    "minecraft_add:obsidian_armor_leggings",
+    "minecraft_add:dirt_armour_leggings"
+  ]
+}

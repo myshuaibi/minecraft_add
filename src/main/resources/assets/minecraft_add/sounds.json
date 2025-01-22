@@ -1,0 +1,10 @@
+{
+  "enchantment.shake_sword.use": {
+    "sounds": [
+      {
+        "name": "minecraft_add:enchantment.shake_sword.use",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft_add:copper_pickaxe",
+    "minecraft_add:terracotta_pickaxe",
+    "minecraft_add:world_heart_tools",
+    "minecraft_add:bedrock_hoe",
+    "minecraft_add:bedrock_pickaxe",
+    "minecraft_add:obsidian_pickaxe",
+    "minecraft_add:dirt_pickaxe"
+  ]
+}

@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT License"
+
+[[mods]]
+modId="minecraft_add"
+version="1.9.1"
+displayName="Minecraft Add"
+displayURL="https://afdian.com/a/newmyshuaibi"
+logoFile="logo.png"
+credits="myshuaibi"
+authors="myshuaibi"
+description="This mod adds more interesting items to Minecraft\u8FD9\u4E2A\u6A21\u7EC4\u4E3A\u6211\u7684\u4E16\u754C\u6DFB\u52A0\u4E86\u66F4\u591A\u6709\u8DA3\u7684\u7269\u54C1"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.minecraft_add]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.65,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.minecraft_add]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

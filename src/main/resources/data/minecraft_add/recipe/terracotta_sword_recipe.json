@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 240,
+  "ingredient": {
+    "item": "minecraft_add:dirt_sword"
+  },
+  "result": {
+    "id": "minecraft_add:terracotta_sword"
+  }
+}
