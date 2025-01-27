@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "minecraft_add:fraud",
     "minecraft_add:shake_sword"
   ]
 }

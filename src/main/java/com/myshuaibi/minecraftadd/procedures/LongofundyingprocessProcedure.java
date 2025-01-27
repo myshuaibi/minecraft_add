@@ -102,8 +102,16 @@ public class LongofundyingprocessProcedure {
 							CustomData.update(DataComponents.CUSTOM_DATA, (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 						}
 					} else {
-						if (entity instanceof Player _player)
-							_player.getCooldowns().addCooldown(MinecraftAddModItems.LONG_OF_UNDYING.get(), 500);
+						if (entity instanceof Player) {
+							if (entity instanceof Player _player)
+								_player.getCooldowns().addCooldown(MinecraftAddModItems.LONG_OF_UNDYING.get(), 500);
+						} else {
+							if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == MinecraftAddModItems.LONG_OF_UNDYING.get()) {
+								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(1);
+							} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == MinecraftAddModItems.LONG_OF_UNDYING.get()) {
+								(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).shrink(1);
+							}
+						}
 					}
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/totem_of_undying"));
