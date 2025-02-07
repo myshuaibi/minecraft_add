@@ -6,6 +6,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.ICancellableEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
@@ -23,17 +24,17 @@ import com.myshuaibi.minecraftadd.init.MinecraftAddModItems;
 public class BedrockdebrisrecipeprocessProcedure {
 	@SubscribeEvent
 	public static void onBlockBreak(BlockEvent.BreakEvent event) {
-		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getPlayer());
+		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getState(), event.getPlayer());
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		execute(null, world, x, y, z, entity);
+	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
+		execute(null, world, x, y, z, blockstate, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == MinecraftAddModItems.OBSIDIAN_PICKAXE.get() && (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.OBSIDIAN) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == MinecraftAddModItems.OBSIDIAN_PICKAXE.get() && blockstate.getBlock() == Blocks.OBSIDIAN) {
 			if (Math.random() < 0.2) {
 				if (event instanceof ICancellableEvent _cancellable) {
 					_cancellable.setCanceled(true);
@@ -46,7 +47,7 @@ public class BedrockdebrisrecipeprocessProcedure {
 				}
 			}
 		}
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == MinecraftAddModItems.BEDROCK_PICKAXE.get() && (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.OBSIDIAN) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == MinecraftAddModItems.BEDROCK_PICKAXE.get() && blockstate.getBlock() == Blocks.OBSIDIAN) {
 			if (Math.random() < 0.5) {
 				if (event instanceof ICancellableEvent _cancellable) {
 					_cancellable.setCanceled(true);

@@ -10,9 +10,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.particles.ParticleTypes;
 
 import javax.annotation.Nullable;
 
@@ -36,6 +38,10 @@ public class TranspositionprocessProcedure {
 				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("minecraft_add:transposition")))) != 0
 				|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY)
 						.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("minecraft_add:transposition")))) != 0) {
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.PORTAL, x, y, z, 20, 3, 3, 3, 1);
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.PORTAL, (sourceentity.getX()), (sourceentity.getY()), (sourceentity.getZ()), 20, 3, 3, 3, 1);
 			{
 				Entity _ent = entity;
 				_ent.teleportTo((sourceentity.getX()), (sourceentity.getY()), (sourceentity.getZ()));

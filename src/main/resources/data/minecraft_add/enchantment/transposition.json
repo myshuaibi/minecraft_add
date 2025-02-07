@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.minecraft_add.transposition"
   },
-  "supported_items": "#minecraft:swords",
+  "supported_items": "#minecraft:enchantable/weapon",
   "weight": 1,
   "max_level": 1,
   "min_cost": {

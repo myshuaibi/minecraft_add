@@ -26,7 +26,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.Minecraft;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.AdvancementHolder;
 
@@ -69,7 +68,6 @@ public class LongofundyingprocessProcedure {
 					if (event instanceof ICancellableEvent _cancellable) {
 						_cancellable.setCanceled(true);
 					}
-					Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(MinecraftAddModItems.LONG_OF_UNDYING.get()));
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.TOTEM_OF_UNDYING, x, y, z, 500, 3, 0, 3, 0);
 					if (world instanceof Level _level) {
@@ -111,6 +109,19 @@ public class LongofundyingprocessProcedure {
 							} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == MinecraftAddModItems.LONG_OF_UNDYING.get()) {
 								(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).shrink(1);
 							}
+						}
+					}
+					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == MinecraftAddModItems.LONG_OF_UNDYING.get()) {
+						{
+							final String _tagName = "show_long_of_undying";
+							final boolean _tagValue = true;
+							CustomData.update(DataComponents.CUSTOM_DATA, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putBoolean(_tagName, _tagValue));
+						}
+					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == MinecraftAddModItems.LONG_OF_UNDYING.get()) {
+						{
+							final String _tagName = "show_long_of_undying";
+							final boolean _tagValue = true;
+							CustomData.update(DataComponents.CUSTOM_DATA, (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY), tag -> tag.putBoolean(_tagName, _tagValue));
 						}
 					}
 					if (entity instanceof ServerPlayer _player) {

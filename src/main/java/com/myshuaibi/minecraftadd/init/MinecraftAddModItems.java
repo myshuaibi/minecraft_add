@@ -9,14 +9,13 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 import net.minecraft.world.item.Item;
 
-import com.myshuaibi.minecraftadd.item.WorldhearttoolsItem;
-import com.myshuaibi.minecraftadd.item.WorldheartItem;
 import com.myshuaibi.minecraftadd.item.TerracottaswordItem;
 import com.myshuaibi.minecraftadd.item.TerracottashovelItem;
 import com.myshuaibi.minecraftadd.item.TerracottapickaxeItem;
 import com.myshuaibi.minecraftadd.item.TerracottahoeItem;
 import com.myshuaibi.minecraftadd.item.TerracottaaxeItem;
 import com.myshuaibi.minecraftadd.item.TabicoItem;
+import com.myshuaibi.minecraftadd.item.OriginArtifactItem;
 import com.myshuaibi.minecraftadd.item.ObsidianswordItem;
 import com.myshuaibi.minecraftadd.item.ObsidianshovelItem;
 import com.myshuaibi.minecraftadd.item.ObsidianpickaxeItem;
@@ -77,8 +76,6 @@ public class MinecraftAddModItems {
 	public static final DeferredItem<Item> BEDROCK_ARMOR_CHESTPLATE = REGISTRY.register("bedrock_armor_chestplate", BedrokarmorItem.Chestplate::new);
 	public static final DeferredItem<Item> BEDROCK_ARMOR_LEGGINGS = REGISTRY.register("bedrock_armor_leggings", BedrokarmorItem.Leggings::new);
 	public static final DeferredItem<Item> BEDROCK_ARMOR_BOOTS = REGISTRY.register("bedrock_armor_boots", BedrokarmorItem.Boots::new);
-	public static final DeferredItem<Item> WORLD_HEART = REGISTRY.register("world_heart", WorldheartItem::new);
-	public static final DeferredItem<Item> WORLD_HEART_TOOLS = REGISTRY.register("world_heart_tools", WorldhearttoolsItem::new);
 	public static final DeferredItem<Item> TERRACOTTA_AXE = REGISTRY.register("terracotta_axe", TerracottaaxeItem::new);
 	public static final DeferredItem<Item> TERRACOTTA_PICKAXE = REGISTRY.register("terracotta_pickaxe", TerracottapickaxeItem::new);
 	public static final DeferredItem<Item> TERRACOTTA_SHOVEL = REGISTRY.register("terracotta_shovel", TerracottashovelItem::new);
@@ -98,6 +95,7 @@ public class MinecraftAddModItems {
 	public static final DeferredItem<Item> ERROR_ARMOR_LEGGINGS = REGISTRY.register("error_armor_leggings", ErrorarmorItem.Leggings::new);
 	public static final DeferredItem<Item> ERROR_ARMOR_BOOTS = REGISTRY.register("error_armor_boots", ErrorarmorItem.Boots::new);
 	public static final DeferredItem<Item> LONG_OF_UNDYING = REGISTRY.register("long_of_undying", LongofundyingItem::new);
+	public static final DeferredItem<Item> ORIGIN_ARTIFACT = REGISTRY.register("origin_artifact", OriginArtifactItem::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }

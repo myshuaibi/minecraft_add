@@ -803,187 +803,6 @@
       "path": "~/advancement"
     },
     {
-      "name": "Worldheart",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "world_heart",
-      "metadata": {
-        "files": [
-          "src/main/java/com/myshuaibi/minecraftadd/item/WorldheartItem.java",
-          "src/main/resources/assets/minecraft_add/models/item/world_heart.json"
-        ]
-      },
-      "path": "~/item"
-    },
-    {
-      "name": "Worldhearttools",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "world_heart_tools",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/minecraft_add/models/item/world_heart_tools.json",
-          "src/main/java/com/myshuaibi/minecraftadd/item/WorldhearttoolsItem.java"
-        ]
-      },
-      "path": "~/item"
-    },
-    {
-      "name": "Worldheartrecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "worldheartrecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft_add/recipe/world_heart_recipe.json"
-        ]
-      },
-      "path": "~/recipe"
-    },
-    {
-      "name": "Worldhearttoolsrecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "worldhearttoolsrecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft_add/recipe/world_heart_tools_recipe.json"
-        ]
-      },
-      "path": "~/recipe"
-    },
-    {
-      "name": "Worldheartprocess",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "world_heart_process",
-      "metadata": {
-        "files": [
-          "src/main/java/com/myshuaibi/minecraftadd/procedures/WorldheartprocessProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/process"
-    },
-    {
-      "name": "Worldhearttoolsblockprocess",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "world_heart_tools_block_process",
-      "metadata": {
-        "files": [
-          "src/main/java/com/myshuaibi/minecraftadd/procedures/WorldhearttoolsblockprocessProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/process"
-    },
-    {
-      "name": "Worldhearttoolscreativeprocess",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "world_heart_tools_creative_process",
-      "metadata": {
-        "files": [
-          "src/main/java/com/myshuaibi/minecraftadd/procedures/WorldhearttoolscreativeprocessProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/process"
-    },
-    {
-      "name": "Worldheartadvancements",
-      "type": "achievement",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "world_heart_advancements",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft_add/advancement/world_heart_advancements.json"
-        ]
-      },
-      "path": "~/advancement"
-    },
-    {
-      "name": "Worldhearttoolsadvancements",
-      "type": "achievement",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "world_heart_tools_advancements",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft_add/advancement/world_heart_tools_advancements.json"
-        ]
-      },
-      "path": "~/advancement"
-    },
-    {
       "name": "Terracottaaxe",
       "type": "tool",
       "compiles": true,
@@ -1376,33 +1195,6 @@
       "path": "~/process"
     },
     {
-      "name": "Worldhearttoolsdamageprocess",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "world_heart_tools_damage_process",
-      "metadata": {
-        "files": [
-          "src/main/java/com/myshuaibi/minecraftadd/procedures/WorldhearttoolsdamageprocessProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/process"
-    },
-    {
       "name": "Gamekill",
       "type": "damagetype",
       "compiles": true,
@@ -1697,41 +1489,6 @@
           {
             "name": "text",
             "type": "string"
-          }
-        ]
-      },
-      "path": "~/process"
-    },
-    {
-      "name": "Worldhearttoolsblockaddprocess",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "world_heart_tools_block_add_process",
-      "metadata": {
-        "files": [
-          "src/main/java/com/myshuaibi/minecraftadd/procedures/WorldhearttoolsblockaddprocessProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2240,6 +1997,122 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "OriginArtifact",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "origin_artifact",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_add/models/item/origin_artifact.json",
+          "src/main/java/com/myshuaibi/minecraftadd/item/OriginArtifactItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "OriginArtifactAdvancements",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "origin_artifact_advancements",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_add/advancement/origin_artifact_advancements.json"
+        ]
+      },
+      "path": "~/advancement"
+    },
+    {
+      "name": "OriginArtifactBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "origin_artifact_block",
+      "metadata": {
+        "files": [
+          "src/main/java/com/myshuaibi/minecraftadd/procedures/OriginArtifactBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "OriginArtifactOpenCreative",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "origin_artifact_open_creative",
+      "metadata": {
+        "files": [
+          "src/main/java/com/myshuaibi/minecraftadd/procedures/OriginArtifactOpenCreativeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "OriginArtifactDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "origin_artifact_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/com/myshuaibi/minecraftadd/procedures/OriginArtifactDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -2279,9 +2152,9 @@
       "CUSTOM:Dieofbebedrock"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:OriginArtifact",
       "~CUSTOM:Copperpickaxe",
       "~CUSTOM:Terracottapickaxe",
-      "~CUSTOM:Worldhearttools",
       "~CUSTOM:Bedrockhoe",
       "~CUSTOM:Bedrockpickaxe",
       "~CUSTOM:Obsidianpickaxe",
@@ -2336,9 +2209,9 @@
       "~CUSTOM:Transposition"
     ],
     "ITEMS:minecraft:axes": [
+      "~CUSTOM:OriginArtifact",
       "~CUSTOM:Copperaxe",
       "~CUSTOM:Terracottaaxe",
-      "~CUSTOM:Worldhearttools",
       "~CUSTOM:Bedrockaxe",
       "~CUSTOM:Obsidianaxe",
       "~CUSTOM:Dirtaxe"
@@ -2354,9 +2227,9 @@
       "CUSTOM:Gamekill"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:OriginArtifact",
       "~CUSTOM:Coppersword",
       "~CUSTOM:Terracottasword",
-      "~CUSTOM:Worldhearttools",
       "~CUSTOM:Bedrocksword",
       "~CUSTOM:Obsidiansword",
       "~CUSTOM:Dirtsword"
@@ -2396,11 +2269,9 @@
       "Dirtsword"
     ],
     "MATERIALS": [
-      "Worldheart",
       "Bedrockdebris"
     ],
     "CUSTOM:MinecraftAddtab": [
-      "Worldheart",
       "Bedrokarmor",
       "Bedrockaxe",
       "Bedrockpickaxe",
@@ -2465,25 +2336,21 @@
       "item.minecraft_add.dirt_hoe": "泥土鋤",
       "item.minecraft_add.obsidian_pickaxe": "黑曜石鎬",
       "item.minecraft_add.obsidian_armor_helmet.description_0": "堅硬的黑曜石頭盔",
-      "item.minecraft_add.terracotta_sword.description_0": "不怎麼硬的劍",
       "item.minecraft_add.bedrock_pickaxe.description_0": "§p堅不可摧",
-      "item.minecraft_add.obsidian_pickaxe.description_0": "堅硬的黑曜石鎬",
+      "item.minecraft_add.terracotta_sword.description_0": "不怎麼硬的劍",
       "item.minecraft_add.error_armor_helmet.description_0": "§1§o§kNULL",
+      "item.minecraft_add.obsidian_pickaxe.description_0": "堅硬的黑曜石鎬",
       "item.minecraft_add.obsidian_shovel.description_0": "堅硬的黑曜石鏟",
-      "item.minecraft_add.world_heart": "本源之心",
       "item.minecraft_add.obsidian_hoe": "黑曜石鋤",
       "item.minecraft_add.error_armor_chestplate.description_0": "§1§o§kNULL",
-      "item.minecraft_add.world_heart_tools.description_0": "萬物歸一",
       "item.minecraft_add.long_of_undying": "長效圖騰",
       "item.minecraft_add.copper_armor_chestplate": "銅胸甲",
-      "advancements.cheat_mode_advancements.descr": "作弊模式已開啟（當然是假的）",
       "item.minecraft_add.terracotta_hoe": "陶瓦鋤",
+      "advancements.cheat_mode_advancements.descr": "作弊模式已開啟（當然是假的）",
       "item.minecraft_add.bedrock_hoe.description_0": "§p堅不可摧",
       "item.minecraft_add.terracotta_hoe.description_0": "不怎麼硬的鋤頭",
       "item.minecraft_add.bedrock_sword.description_0": "§p堅不可摧",
-      "advancements.world_heart_tools_advancements.descr": "獲得[無法描述!]",
       "item.minecraft_add.dirt_shovel": "泥土鏟",
-      "advancements.world_heart_advancements.descr": "獲得[本源之心]",
       "death.attack.game_kill.player": "%1$s 被 %2$s 終結",
       "item.minecraft_add.dirt_armour_chestplate.description_0": "非常脆弱的胸甲",
       "item.minecraft_add.obsidian_shovel": "黑曜石鏟",
@@ -2530,9 +2397,9 @@
       "item.minecraft_add.dirt_sword.description_0": "很脆弱的劍",
       "item.minecraft_add.dirt_shovel.description_0": "很脆弱的鏟子",
       "death.attack.die_of_be_bedrock": "%1$s 變為了基岩",
+      "item.minecraft_add.origin_artifact": "本源真理",
       "item.minecraft_add.obsidian_armor_boots.description_0": "堅硬的黑曜石靴子",
       "death.attack.game_kill.item": "%1$s 被 %2$s 使用 %3$s 終結",
-      "item.minecraft_add.long_of_undying.description_2": "§6長久地守護",
       "item.minecraft_add.terracotta_sword": "陶瓦劍",
       "item.minecraft_add.long_of_undying.description_1": "充能:",
       "item.minecraft_add.long_of_undying.description_0": "•願§6守護§r如§4基岩§r般永恆",
@@ -2541,7 +2408,6 @@
       "item.minecraft_add.error_armor_boots": "NULL",
       "item.minecraft_add.obsidian_armor_helmet": "黑曜石頭盔",
       "advancements.dirt_tools_advancements.descr": "製作全套泥土工具",
-      "item.minecraft_add.world_heart.description_0": "世界的核心",
       "item.minecraft_add.terracotta_axe.description_0": "不怎麼硬的斧頭",
       "item.minecraft_add.bedrock_debris": "基岩碎片",
       "item.minecraft_add.obsidian_armor_chestplate.description_0": "堅硬的黑曜石胸甲",
@@ -2568,6 +2434,7 @@
       "advancements.bedrock_tools_advancements.title": "永恆的工具",
       "item.minecraft_add.copper_armor_boots": "銅靴子",
       "advancements.poor_enough_to_eat_dirt.title": "窮到吃土",
+      "item.minecraft_add.origin_artifact.description_0": "萬物歸一",
       "item.minecraft_add.bedrock_armor_boots": "基岩靴子",
       "item.minecraft_add.obsidian_axe.description_0": "堅硬的黑曜石斧",
       "item.minecraft_add.terracotta_pickaxe.description_0": "不怎麼硬的鎬子",
@@ -2575,15 +2442,15 @@
       "item.minecraft_add.bedrock_sword": "基岩劍",
       "item.minecraft_add.bedrock_pickaxe": "基岩鎬",
       "item.minecraft_add.bedrock_armor_leggings.description_0": "§p堅不可摧",
-      "item.minecraft_add.world_heart_tools": "本源真理",
       "item.minecraft_add.bedrock_shovel.description_0": "§p堅不可摧",
       "item.minecraft_add.copper_axe.description_0": "亮閃閃的斧頭",
       "item.minecraft_add.bedrock_axe.description_0": "§p堅不可摧",
+      "advancements.origin_artifact_advancements.title": "本源真理",
       "item.minecraft_add.terracotta_pickaxe": "陶瓦鎬",
       "item.minecraft_add.copper_armor_helmet": "銅頭盔",
-      "advancements.world_heart_advancements.title": "世界的心臟",
       "item.minecraft_add.bedrock_shovel": "基岩鏟",
       "item.minecraft_add.dirt_axe.description_0": "很脆弱的斧頭",
+      "advancements.origin_artifact_advancements.descr": "萬物歸一",
       "item.minecraft_add.copper_armor_leggings.description_0": "亮閃閃的護腿",
       "item.minecraft_add.dirt_sword": "泥土劍",
       "enchantment.minecraft_add.shake_sword": "震刀",
@@ -2593,7 +2460,6 @@
       "item.minecraft_add.obsidian_sword": "黑曜石劍",
       "item.minecraft_add.copper_hoe": "銅鋤",
       "item.minecraft_add.terracotta_axe": "陶瓦斧",
-      "advancements.world_heart_tools_advancements.title": "萬物歸一",
       "item.minecraft_add.copper_armor_chestplate.description_0": "亮閃閃的胸甲",
       "advancements.bedrock_tools_advancements.descr": "製作全套基岩工具",
       "process.peace_world_end.title": "和平之地的盡頭有[§kNULL§r]",
@@ -2614,10 +2480,8 @@
       "item.minecraft_add.error_armor_helmet.description_0": "§1§o§kNULL",
       "item.minecraft_add.obsidian_pickaxe.description_0": "堅硬的黑曜石鎬",
       "item.minecraft_add.obsidian_shovel.description_0": "堅硬的黑曜石鏟",
-      "item.minecraft_add.world_heart": "本源之心",
       "item.minecraft_add.obsidian_hoe": "黑曜石鋤",
       "item.minecraft_add.error_armor_chestplate.description_0": "§1§o§kNULL",
-      "item.minecraft_add.world_heart_tools.description_0": "萬物歸一",
       "item.minecraft_add.long_of_undying": "長效圖騰",
       "item.minecraft_add.copper_armor_chestplate": "銅胸甲",
       "item.minecraft_add.terracotta_hoe": "陶瓦鋤",
@@ -2625,9 +2489,7 @@
       "item.minecraft_add.bedrock_hoe.description_0": "§p堅不可摧",
       "item.minecraft_add.terracotta_hoe.description_0": "不怎麼硬的鋤頭",
       "item.minecraft_add.bedrock_sword.description_0": "§p堅不可摧",
-      "advancements.world_heart_tools_advancements.descr": "獲得[無法描述!]",
       "item.minecraft_add.dirt_shovel": "泥土鏟",
-      "advancements.world_heart_advancements.descr": "獲得[本源之心]",
       "death.attack.game_kill.player": "%1$s 被 %2$s 終結",
       "item.minecraft_add.dirt_armour_chestplate.description_0": "非常脆弱的胸甲",
       "item.minecraft_add.obsidian_shovel": "黑曜石鏟",
@@ -2674,9 +2536,9 @@
       "item.minecraft_add.dirt_sword.description_0": "很脆弱的劍",
       "item.minecraft_add.dirt_shovel.description_0": "很脆弱的鏟子",
       "death.attack.die_of_be_bedrock": "%1$s 變為了基岩",
+      "item.minecraft_add.origin_artifact": "本源真理",
       "item.minecraft_add.obsidian_armor_boots.description_0": "堅硬的黑曜石靴子",
       "death.attack.game_kill.item": "%1$s 被 %2$s 使用 %3$s 終結",
-      "item.minecraft_add.long_of_undying.description_2": "§6長久地守護",
       "item.minecraft_add.terracotta_sword": "陶瓦劍",
       "item.minecraft_add.long_of_undying.description_1": "充能:",
       "item.minecraft_add.long_of_undying.description_0": "•願§6守護§r如§4基岩§r般永恆",
@@ -2685,7 +2547,6 @@
       "item.minecraft_add.error_armor_boots": "NULL",
       "item.minecraft_add.obsidian_armor_helmet": "黑曜石頭盔",
       "advancements.dirt_tools_advancements.descr": "製作全套泥土工具",
-      "item.minecraft_add.world_heart.description_0": "世界的核心",
       "item.minecraft_add.terracotta_axe.description_0": "不怎麼硬的斧頭",
       "item.minecraft_add.bedrock_debris": "基岩碎片",
       "item.minecraft_add.obsidian_armor_chestplate.description_0": "堅硬的黑曜石胸甲",
@@ -2712,6 +2573,7 @@
       "advancements.bedrock_tools_advancements.title": "永恆的工具",
       "item.minecraft_add.copper_armor_boots": "銅靴子",
       "advancements.poor_enough_to_eat_dirt.title": "窮到吃土",
+      "item.minecraft_add.origin_artifact.description_0": "萬物歸一",
       "item.minecraft_add.bedrock_armor_boots": "基岩靴子",
       "item.minecraft_add.obsidian_axe.description_0": "堅硬的黑曜石斧",
       "item.minecraft_add.terracotta_pickaxe.description_0": "不怎麼硬的鎬子",
@@ -2719,15 +2581,15 @@
       "item.minecraft_add.bedrock_sword": "基岩劍",
       "item.minecraft_add.bedrock_pickaxe": "基岩鎬",
       "item.minecraft_add.bedrock_armor_leggings.description_0": "§p堅不可摧",
-      "item.minecraft_add.world_heart_tools": "本源真理",
       "item.minecraft_add.bedrock_shovel.description_0": "§p堅不可摧",
       "item.minecraft_add.copper_axe.description_0": "亮閃閃的斧頭",
       "item.minecraft_add.bedrock_axe.description_0": "§p堅不可摧",
+      "advancements.origin_artifact_advancements.title": "本源真理",
       "item.minecraft_add.terracotta_pickaxe": "陶瓦鎬",
       "item.minecraft_add.copper_armor_helmet": "銅頭盔",
-      "advancements.world_heart_advancements.title": "世界的心臟",
       "item.minecraft_add.bedrock_shovel": "基岩鏟",
       "item.minecraft_add.dirt_axe.description_0": "很脆弱的斧頭",
+      "advancements.origin_artifact_advancements.descr": "萬物歸一",
       "item.minecraft_add.copper_armor_leggings.description_0": "亮閃閃的護腿",
       "item.minecraft_add.dirt_sword": "泥土劍",
       "enchantment.minecraft_add.shake_sword": "震刀",
@@ -2737,7 +2599,6 @@
       "item.minecraft_add.obsidian_sword": "黑曜石劍",
       "item.minecraft_add.copper_hoe": "銅鋤",
       "item.minecraft_add.terracotta_axe": "陶瓦斧",
-      "advancements.world_heart_tools_advancements.title": "萬物歸一",
       "item.minecraft_add.copper_armor_chestplate.description_0": "亮閃閃的胸甲",
       "advancements.bedrock_tools_advancements.descr": "製作全套基岩工具",
       "process.peace_world_end.title": "和平之地的盡頭有[§kNULL§r]",
@@ -2759,9 +2620,7 @@
       "item.minecraft_add.obsidian_pickaxe.description_0": "Hard obsidian pickaxe",
       "item.minecraft_add.obsidian_shovel.description_0": "Hard obsidian shovel",
       "item.minecraft_add.obsidian_hoe": "Obsidian Hoe",
-      "item.minecraft_add.world_heart": "World Heart",
       "item.minecraft_add.error_armor_chestplate.description_0": "§1§o§kNULL",
-      "item.minecraft_add.world_heart_tools.description_0": "All things are one",
       "item.minecraft_add.long_of_undying": "Long of Undying",
       "item.minecraft_add.copper_armor_chestplate": "Copper Chestplate",
       "advancements.cheat_mode_advancements.descr": "Cheat mode turned on (fake, of course)",
@@ -2769,9 +2628,7 @@
       "item.minecraft_add.bedrock_hoe.description_0": "§pindestructible",
       "item.minecraft_add.terracotta_hoe.description_0": "Not too hard a hoe",
       "item.minecraft_add.bedrock_sword.description_0": "§pindestructible",
-      "advancements.world_heart_tools_advancements.descr": "obtain [can not describe!]",
       "item.minecraft_add.dirt_shovel": "Dirt Shovel",
-      "advancements.world_heart_advancements.descr": "obtain [world heart]",
       "death.attack.game_kill.player": "%1$s was by %2$s terminated",
       "item.minecraft_add.dirt_armour_chestplate.description_0": "Very fragile chestplate",
       "item.minecraft_add.obsidian_shovel": "Obsidian Shovel",
@@ -2818,9 +2675,9 @@
       "item.minecraft_add.dirt_sword.description_0": "Very fragile sword",
       "item.minecraft_add.dirt_shovel.description_0": "Very fragile shovel",
       "death.attack.die_of_be_bedrock": "%1$s be a bedrock",
+      "item.minecraft_add.origin_artifact": "Origin Artifact",
       "item.minecraft_add.obsidian_armor_boots.description_0": "Hard obsidian boots",
       "death.attack.game_kill.item": "%1$s was terminated by %2$s using %3$s",
-      "item.minecraft_add.long_of_undying.description_2": "§6Defend for a long time",
       "item.minecraft_add.terracotta_sword": "Terracotta Sword",
       "item.minecraft_add.long_of_undying.description_1": "charged:",
       "item.minecraft_add.long_of_undying.description_0": "•May the §6guardian§r be as eternal as the §4bedrock§r",
@@ -2829,7 +2686,6 @@
       "item.minecraft_add.error_armor_boots": "NULL",
       "item.minecraft_add.obsidian_armor_helmet": "Obsidian Helmet",
       "advancements.dirt_tools_advancements.descr": "Craft a full set of dirt tools",
-      "item.minecraft_add.world_heart.description_0": "The heart of the world",
       "item.minecraft_add.terracotta_axe.description_0": "Not too hard an axe",
       "item.minecraft_add.bedrock_debris": "Bedrock Debris",
       "item.minecraft_add.obsidian_armor_chestplate.description_0": "Hard obsidian chestplate",
@@ -2856,6 +2712,7 @@
       "advancements.bedrock_tools_advancements.title": "Timeless equipment",
       "item.minecraft_add.copper_armor_boots": "Copper Boots",
       "advancements.poor_enough_to_eat_dirt.title": "Poor enough to eat dirt",
+      "item.minecraft_add.origin_artifact.description_0": "All things are one",
       "item.minecraft_add.bedrock_armor_boots": "Bedrock Boots",
       "item.minecraft_add.obsidian_axe.description_0": "Hard obsidian axe",
       "item.minecraft_add.terracotta_pickaxe.description_0": "Not too hard a pickaxe",
@@ -2863,15 +2720,15 @@
       "item.minecraft_add.bedrock_sword": "Bedrock Sword",
       "item.minecraft_add.bedrock_pickaxe": "Bedrock Pickaxe",
       "item.minecraft_add.bedrock_armor_leggings.description_0": "§pindestructible",
-      "item.minecraft_add.world_heart_tools": "Origin Artifact",
       "item.minecraft_add.bedrock_shovel.description_0": "§pindestructible",
       "item.minecraft_add.copper_axe.description_0": "Shiny axe",
       "item.minecraft_add.bedrock_axe.description_0": "§pindestructible",
+      "advancements.origin_artifact_advancements.title": "Origin Artifact",
       "item.minecraft_add.terracotta_pickaxe": "Terracotta Pickaxe",
       "item.minecraft_add.copper_armor_helmet": "Copper Helmet",
-      "advancements.world_heart_advancements.title": "The heart of the world",
       "item.minecraft_add.bedrock_shovel": "Bedrock Shovel",
       "item.minecraft_add.dirt_axe.description_0": "Very fragile axe",
+      "advancements.origin_artifact_advancements.descr": "All things are one",
       "item.minecraft_add.copper_armor_leggings.description_0": "Shiny leggings",
       "item.minecraft_add.dirt_sword": "Dirt Sword",
       "enchantment.minecraft_add.shake_sword": "Shake Sword",
@@ -2881,7 +2738,6 @@
       "item.minecraft_add.obsidian_sword": "Obsidian Sword",
       "item.minecraft_add.copper_hoe": "Copper Hoe",
       "item.minecraft_add.terracotta_axe": "Terracotta Axe",
-      "advancements.world_heart_tools_advancements.title": "All things are one",
       "item.minecraft_add.copper_armor_chestplate.description_0": "Shiny chestplate",
       "advancements.bedrock_tools_advancements.descr": "Craft a full set of bedrock tools",
       "process.peace_world_end.title": "At the end of peace world has [§kNULL§r]",
@@ -2897,25 +2753,21 @@
       "item.minecraft_add.dirt_hoe": "泥土锄",
       "item.minecraft_add.obsidian_pickaxe": "黑曜石镐",
       "item.minecraft_add.obsidian_armor_helmet.description_0": "坚硬的黑曜石头盔",
-      "item.minecraft_add.bedrock_pickaxe.description_0": "§p坚不可摧",
       "item.minecraft_add.terracotta_sword.description_0": "不怎么硬的剑",
-      "item.minecraft_add.error_armor_helmet.description_0": "§1§o§kNULL",
+      "item.minecraft_add.bedrock_pickaxe.description_0": "§p坚不可摧",
       "item.minecraft_add.obsidian_pickaxe.description_0": "坚硬的黑曜石镐",
+      "item.minecraft_add.error_armor_helmet.description_0": "§1§o§kNULL",
       "item.minecraft_add.obsidian_shovel.description_0": "坚硬的黑曜石铲",
-      "item.minecraft_add.world_heart": "本源之心",
       "item.minecraft_add.obsidian_hoe": "黑曜石锄",
       "item.minecraft_add.error_armor_chestplate.description_0": "§1§o§kNULL",
-      "item.minecraft_add.world_heart_tools.description_0": "万物归一",
       "item.minecraft_add.long_of_undying": "长效图腾",
       "item.minecraft_add.copper_armor_chestplate": "铜胸甲",
-      "item.minecraft_add.terracotta_hoe": "陶瓦锄",
       "advancements.cheat_mode_advancements.descr": "作弊模式已开启(当然是假的)",
+      "item.minecraft_add.terracotta_hoe": "陶瓦锄",
       "item.minecraft_add.bedrock_hoe.description_0": "§p坚不可摧",
       "item.minecraft_add.terracotta_hoe.description_0": "不怎么硬的锄头",
       "item.minecraft_add.bedrock_sword.description_0": "§p坚不可摧",
-      "advancements.world_heart_tools_advancements.descr": "获得[无法描述!]",
       "item.minecraft_add.dirt_shovel": "泥土铲",
-      "advancements.world_heart_advancements.descr": "获得[本源之心]",
       "death.attack.game_kill.player": "%1$s 被 %2$s 终结",
       "item.minecraft_add.dirt_armour_chestplate.description_0": "非常脆弱的胸甲",
       "item.minecraft_add.obsidian_shovel": "黑曜石铲",
@@ -2962,9 +2814,9 @@
       "item.minecraft_add.dirt_sword.description_0": "很脆弱的剑",
       "item.minecraft_add.dirt_shovel.description_0": "很脆弱的铲子",
       "death.attack.die_of_be_bedrock": "%1$s 变为了基岩",
+      "item.minecraft_add.origin_artifact": "本源真理",
       "item.minecraft_add.obsidian_armor_boots.description_0": "坚硬的黑曜石靴子",
       "death.attack.game_kill.item": "%1$s 被 %2$s 使用 %3$s 终结",
-      "item.minecraft_add.long_of_undying.description_2": "",
       "item.minecraft_add.terracotta_sword": "陶瓦剑",
       "item.minecraft_add.long_of_undying.description_1": "充能:",
       "item.minecraft_add.long_of_undying.description_0": "•愿§6守护§r如§4基岩§r般永恒",
@@ -2973,7 +2825,6 @@
       "item.minecraft_add.error_armor_boots": "NULL",
       "item.minecraft_add.obsidian_armor_helmet": "黑曜石头盔",
       "advancements.dirt_tools_advancements.descr": "制作全套泥土工具",
-      "item.minecraft_add.world_heart.description_0": "世界的核心",
       "item.minecraft_add.terracotta_axe.description_0": "不怎么硬的斧头",
       "item.minecraft_add.bedrock_debris": "基岩碎片",
       "item.minecraft_add.obsidian_armor_chestplate.description_0": "坚硬的黑曜石胸甲",
@@ -3000,6 +2851,7 @@
       "advancements.bedrock_tools_advancements.title": "永恒的工具",
       "item.minecraft_add.copper_armor_boots": "铜靴子",
       "advancements.poor_enough_to_eat_dirt.title": "穷到吃土",
+      "item.minecraft_add.origin_artifact.description_0": "万物归一",
       "item.minecraft_add.bedrock_armor_boots": "基岩靴子",
       "item.minecraft_add.obsidian_axe.description_0": "坚硬的黑曜石斧",
       "item.minecraft_add.terracotta_pickaxe.description_0": "不怎么硬的镐子",
@@ -3007,15 +2859,15 @@
       "item.minecraft_add.bedrock_sword": "基岩剑",
       "item.minecraft_add.bedrock_pickaxe": "基岩镐",
       "item.minecraft_add.bedrock_armor_leggings.description_0": "§p坚不可摧",
-      "item.minecraft_add.world_heart_tools": "本源真理",
       "item.minecraft_add.bedrock_shovel.description_0": "§p坚不可摧",
       "item.minecraft_add.copper_axe.description_0": "亮闪闪的斧头",
       "item.minecraft_add.bedrock_axe.description_0": "§p坚不可摧",
+      "advancements.origin_artifact_advancements.title": "本源真理",
       "item.minecraft_add.terracotta_pickaxe": "陶瓦镐",
       "item.minecraft_add.copper_armor_helmet": "铜头盔",
-      "advancements.world_heart_advancements.title": "世界的心脏",
       "item.minecraft_add.bedrock_shovel": "基岩铲",
       "item.minecraft_add.dirt_axe.description_0": "很脆弱的斧头",
+      "advancements.origin_artifact_advancements.descr": "万物归一",
       "item.minecraft_add.copper_armor_leggings.description_0": "亮闪闪的护腿",
       "item.minecraft_add.dirt_sword": "泥土剑",
       "enchantment.minecraft_add.shake_sword": "震刀",
@@ -3025,7 +2877,6 @@
       "item.minecraft_add.obsidian_sword": "黑曜石剑",
       "item.minecraft_add.copper_hoe": "铜锄",
       "item.minecraft_add.terracotta_axe": "陶瓦斧",
-      "advancements.world_heart_tools_advancements.title": "万物归一",
       "item.minecraft_add.copper_armor_chestplate.description_0": "亮闪闪的胸甲",
       "advancements.bedrock_tools_advancements.descr": "制作全套基岩工具",
       "process.peace_world_end.title": "和平之地的尽头有[§kNULL§r]",

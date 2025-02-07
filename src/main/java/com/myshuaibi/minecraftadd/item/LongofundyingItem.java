@@ -12,13 +12,16 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.Minecraft;
 
 import java.util.List;
 
 import com.myshuaibi.minecraftadd.procedures.LongofundyingusingprocessProcedure;
+import com.myshuaibi.minecraftadd.procedures.LongofundyingTitleProcedure;
 
 public class LongofundyingItem extends Item {
 	public LongofundyingItem() {
@@ -39,7 +42,13 @@ public class LongofundyingItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.translatable("item.minecraft_add.long_of_undying.description_0"));
+		Entity entity = itemstack.getEntityRepresentation() != null ? itemstack.getEntityRepresentation() : Minecraft.getInstance().player;
+		String hoverText = LongofundyingTitleProcedure.execute(itemstack);
+		if (hoverText != null) {
+			for (String line : hoverText.split("\n")) {
+				list.add(Component.literal(line));
+			}
+		}
 	}
 
 	@Override

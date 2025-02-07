@@ -23,7 +23,6 @@ public class MinecraftAddModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MinecraftAddMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MINECRAFT_ADD_TAB = REGISTRY.register("minecraft_add_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.minecraft_add.minecraft_add_tab")).icon(() -> new ItemStack(MinecraftAddModItems.TAB_ICO.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(MinecraftAddModItems.WORLD_HEART.get());
 				tabData.accept(MinecraftAddModItems.BEDROCK_ARMOR_HELMET.get());
 				tabData.accept(MinecraftAddModItems.BEDROCK_ARMOR_CHESTPLATE.get());
 				tabData.accept(MinecraftAddModItems.BEDROCK_ARMOR_LEGGINGS.get());
@@ -95,7 +94,6 @@ public class MinecraftAddModTabs {
 			tabData.accept(MinecraftAddModItems.DIRT_ARMOUR_BOOTS.get());
 			tabData.accept(MinecraftAddModItems.DIRT_SWORD.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-			tabData.accept(MinecraftAddModItems.WORLD_HEART.get());
 			tabData.accept(MinecraftAddModItems.BEDROCK_DEBRIS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(MinecraftAddModItems.BEDROCK_AXE.get());

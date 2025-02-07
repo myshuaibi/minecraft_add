@@ -5,7 +5,6 @@
     "minecraft_add:terracotta_shovel",
     "minecraft_add:bedrock_shovel",
     "minecraft_add:obsidian_shovel",
-    "minecraft_add:dirt_shovel",
-    "minecraft_add:world_heart_tools"
+    "minecraft_add:dirt_shovel"
   ]
 }

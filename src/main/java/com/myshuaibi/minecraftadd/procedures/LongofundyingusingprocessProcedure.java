@@ -31,7 +31,7 @@ public class LongofundyingusingprocessProcedure {
 		}
 		{
 			final String _tagName = "charged";
-			final double _tagValue = (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("charged") + 2);
+			final double _tagValue = (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("charged") + 1);
 			CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 		}
 	}

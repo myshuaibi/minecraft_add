@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
+    "minecraft_add:origin_artifact",
     "minecraft_add:copper_sword",
     "minecraft_add:terracotta_sword",
-    "minecraft_add:world_heart_tools",
     "minecraft_add:bedrock_sword",
     "minecraft_add:obsidian_sword",
     "minecraft_add:dirt_sword"
